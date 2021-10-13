@@ -1,0 +1,12 @@
+diff --git a/app/config/security.yml b/app/config/security.yml
+index 3842e01d..8a45ccee 100644
+--- a/app/config/security.yml
++++ b/app/config/security.yml
+@@ -30,3 +30,6 @@ security:
+ 
+             # form_login: ~
+             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
++
++    access_control:
++        - { path: ^/admin, roles: ROLE_USER }
+\ No newline at end of file
